@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://aurora-cluster-endpoint:5432/aurora?serverTimezone=UTC
+    username: postgres
+    password: "password"
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    properties:
+      hibernate:
+        hbm2ddl:
+          auto: "create"
